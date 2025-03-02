@@ -10,12 +10,9 @@
 
 ## Installation
 
-```sh npm install```
-
-
-## Nutzung
-
-npm script/..
+```sh
+npm install
+ ```
 
 
 
@@ -26,7 +23,7 @@ npm script/..
 
 👤 **Toni Kleinfeld**
 
-* Website: 
+* Website: https://toni-kleinfeld.de/
 * Github: [@ToniKleinfeld](https://github.com/ToniKleinfeld)
 * LinkedIn: https://www.linkedin.com/in/tonikleinfeld/
 
