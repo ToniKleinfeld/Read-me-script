@@ -6,27 +6,27 @@
   </a>
 </p>
 
- > Description will follow at a later update.
+> Description will follow at a later update.
 
 ## Installation
 
 ```sh
 npm install
- ```
+```
 
+## Nutzung
 
-
-
-
+```sh
+ node script/generate-readme-script.js
+```
 
 ## Author
 
 👤 **Toni Kleinfeld**
 
-* Website: https://toni-kleinfeld.de/
-* Github: [@ToniKleinfeld](https://github.com/ToniKleinfeld)
-* LinkedIn: https://www.linkedin.com/in/tonikleinfeld/
-
+- Website: https://toni-kleinfeld.de/
+- Github: [@ToniKleinfeld](https://github.com/ToniKleinfeld)
+- LinkedIn: https://www.linkedin.com/in/tonikleinfeld/
 
 ## Show your support
 
