@@ -13,7 +13,7 @@
 {{installation}}
 
 <!-- USAGE_START -->
-## Nutzung
+## How to use
 
 {{usage}}
 

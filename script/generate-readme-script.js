@@ -35,11 +35,21 @@ let author = "Toni Kleinfeld";
 let github = "ToniKleinfeld";
 let linkIn = "https://www.linkedin.com/in/tonikleinfeld/";
 let website = "https://toni-kleinfeld.de/";
+let projectLinkname = parentFolderName;
+let projectName = '';
+let description = '';
+let installation = '';
+let build = "";
+let usage = "";
+let createtWith = "Coded_in-JavaScript-yellow?logo=javascript";
 
 rl.question(
   "Projectname (When empty use Project folder name): ",
-  (projectName) => {
-    rl.question("Description: ", (description) => {
+  (projectNameInput) => {
+    projectName = projectNameInput.trim() || `${formattedName}`;
+    rl.question("Description: ", (descriptionInput) => {
+      description =
+        descriptionInput.trim() || "Description will follow at a later update.";
       rl.question("Author name: ", (authorinput) => {
         if (authorinput) {
           author = authorinput.trim();
@@ -58,12 +68,9 @@ rl.question(
               }
               rl.question(
                 "How Install(empty -> JS, framework or your own instructions): ",
-                (installation) => {
-                  let build = "";
-                  let usage = "";
+                (installationInput) => {
                   installation =
-                    installation.trim() || "```sh\nnpm install\n ```";
-                  createtWith = "Coded_in-JavaScript-yellow";
+                    installationInput.trim() || "```sh\nnpm install\n ```";
 
                   if (
                     ["angular", "nuxt", "vue"].includes(
@@ -83,61 +90,15 @@ rl.question(
                     rl.question(
                       "How to build (empty , angular, nuxt, vue ): ",
                       (buildinput) => {
+                        build = buildinput.trim() || "";
                         rl.question("How to use: ", (usageinput) => {
-                          build = buildinput.trim() || "";
                           usage = usageinput.trim() || "";
                           finalize();
-                        });
+                        });                        
                       }
                     );
                   }
-
-                  function finalize() {
-                    projectName = projectName.trim() || `${formattedName}`;
-                    let porjectLinkname = parentFolderName;
-                    description =
-                      description.trim() ||
-                      "Description will follow at a later update.";
-
-                    // Datenobjekt für die Platzhalter im Template
-                    const data = {
-                      projectName,
-                      porjectLinkname,
-                      description,
-                      installation,
-                      createtWith,
-                      build,
-                      usage,
-                      author,
-                      github,
-                      linkIn,
-                      website,
-                    };
-
-                    let filledContent = fillTemplate(template, data);
-
-                    filledContent = checkEmptyTemplate(
-                      usage,
-                      "usage",
-                      filledContent
-                    );
-                    filledContent = checkEmptyTemplate(
-                      build,
-                      "build",
-                      filledContent
-                    );
-
-                    const outputPath = path.join(__dirname, "..", "README.md");
-
-                    fs.writeFileSync(outputPath, filledContent.trim());
-                    console.log(
-                      `README.md was successfully saved in the folder ${path.join(
-                        __dirname,
-                        ".."
-                      )} created!`
-                    );
-                    rl.close();
-                  }
+                  
                 }
               );
             });
@@ -147,6 +108,47 @@ rl.question(
     });
   }
 );
+
+function finalize() {
+                    
+  let data = {
+    projectName,
+    projectLinkname,
+    description,
+    installation,
+    createtWith,
+    build,
+    usage,
+    author,
+    github,
+    linkIn,
+    website,
+  };
+
+  let filledContent = fillTemplate(template, data);
+
+  filledContent = checkEmptyTemplate(
+    usage,
+    "usage",
+    filledContent
+  );
+  filledContent = checkEmptyTemplate(
+    build,
+    "build",
+    filledContent
+  );
+
+  const outputPath = path.join(__dirname, "..", "README.md");
+
+  fs.writeFileSync(outputPath, filledContent.trim());
+  console.log(
+    `README.md was successfully saved in the folder ${path.join(
+      __dirname,
+      ".."
+    )} created!`
+  );
+  rl.close();
+}
 
 function checkEmptyTemplate(Value, part, filledContent) {
   filledContent;
@@ -181,11 +183,11 @@ function returnFrameworkString(Value, part) {
     }
   } else if (part == "banner") {
     if (Value.toLowerCase() === "angular") {
-      return "Framework-Angular-darkred";
+      return "Framework-Angular-darkred?logo=angular";
     } else if (Value.toLowerCase() === "nuxt") {
-      return "Framework-NUXT3-darkblue";
+      return "Framework-NUXT3-neongreen?logo=nuxt";
     } else if (Value.toLowerCase() === "vue") {
-      return "Framework-VUE-darkgreen`";
+      return "Framework-VUE-darkgreen?logo=vuedotjs";
     }
   }
 }
