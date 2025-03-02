@@ -1,6 +1,6 @@
 <h1 align="center">Welcome to Read Me Script👋</h1>
 <p>
-  <img alt="Version" src="https://img.shields.io/badge/Framework-NUXT3-darkblue" />
+  <img alt="Version" src="https://img.shields.io/badge/Coded_in-JavaScript-yellow" />
   <a href="https://github.com/ToniKleinfeld/Read-me-script?tab=MIT-1-ov-file" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
   </a>
@@ -15,14 +15,10 @@
 
 ## Nutzung
 
-Start the development server on http://localhost:3000 with ```sh npm run dev ```
+npm script/..
 
 
 
-
-## Build
-
-Build the application for production with ```sh npm run build ```
 
 
 

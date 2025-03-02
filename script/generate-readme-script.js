@@ -1,4 +1,5 @@
 const fs = require("fs");
+const { console } = require("inspector");
 const path = require("path");
 const readline = require("readline");
 
@@ -30,20 +31,21 @@ const rl = readline.createInterface({
   output: process.stdout,
 });
 
-let author = "Toni Kleinfeld"
+let author = "Toni Kleinfeld";
 let github = "ToniKleinfeld";
-let linkIn = "https://www.linkedin.com/in/tonikleinfeld/"
+let linkIn = "https://www.linkedin.com/in/tonikleinfeld/";
 
 rl.question(
   "Projectname (When empty use Project folder name): ",
   (projectName) => {
     rl.question("Description: ", (description) => {
       rl.question(
-        "How Install(empty, framework or your own instructions): ",
+        "How Install(empty -> JS, framework or your own instructions): ",
         (installation) => {
-          let build = "";
-          let usage = "";
+          let build = '';
+          let usage = ''
           installation = installation.trim() || "```sh npm install```";
+          createtWith = "Coded_in-JavaScript-yellow";
 
           if (["angular", "nuxt", "vue"].includes(installation.toLowerCase())) {
             build = returnFrameworkString(installation, "build");
@@ -58,10 +60,10 @@ rl.question(
           } else {
             rl.question(
               "How to build (empty , angular, nuxt, vue ): ",
-              (build) => {
-                rl.question("How to use: ", (usage) => {
-                  build = build.trim();
-                  usage = usage.trim();
+              (buildinput) => {
+                rl.question("How to use: ", (usageinput) => {
+                  build = buildinput.trim() || '';
+                  usage = usageinput.trim() || '';
                   finalize();
                 });
               }
@@ -86,7 +88,7 @@ rl.question(
               usage,
               author,
               github,
-              linkIn
+              linkIn,
             };
 
             let filledContent = fillTemplate(template, data);
