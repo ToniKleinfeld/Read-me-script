@@ -10,9 +10,7 @@
 
 ## Installation
 
-```sh
-npm install
-```
+You need node installed.
 
 ## Nutzung
 
