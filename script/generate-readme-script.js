@@ -48,6 +48,7 @@ rl.question(
           if (["angular", "nuxt", "vue"].includes(installation.toLowerCase())) {
             build = returnFrameworkString(installation, "build");
             usage = returnFrameworkString(installation, "usage");
+            createtWith = returnFrameworkString(installation, "banner");
 
             console.log(
               `Skipping build & usage questions. Using ${installation.toUpperCase()} as default.`
@@ -80,6 +81,7 @@ rl.question(
               porjectLinkname,
               description,
               installation,
+              createtWith,
               build,
               usage,
               author,
@@ -139,6 +141,14 @@ function returnFrameworkString(Value, part) {
       return "Start the development server on http://localhost:3000 with ```sh npm run dev ```";
     } else if (Value.toLowerCase() === "vue") {
       return "Compile and Hot-Reload for Development ```sh npm run dev ```";
+    }
+  } else if (part == "banner") {
+    if (Value.toLowerCase() === "angular") {
+      return "Framework-Angular-darkred";
+    } else if (Value.toLowerCase() === "nuxt") {
+      return "Framework-NUXT3-darkblue";
+    } else if (Value.toLowerCase() === "vue") {
+      return "Framework-VUE-darkgreen`";
     }
   }
 }
