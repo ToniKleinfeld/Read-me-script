@@ -1,7 +1,7 @@
 <h1 align="center">Welcome to {{projectName}}👋</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/{{createtWith}}" />
-  <a href="https://github.com/{{github}}/{{porjectLinkname}}?tab=MIT-1-ov-file" target="_blank">
+  <a href="https://github.com/{{github}}/{{projectLinkname}}?tab=MIT-1-ov-file" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
   </a>
 </p>
@@ -42,4 +42,4 @@ Give a ⭐️ if this project helped you!
 ## 📝 License
 
 Copyright © 2025 [{{author}}](https://github.com/{{github}}).<br />
-This project is [{{licensed}}](https://github.com/{{github}}/{{porjectLinkname}}?tab=MIT-1-ov-file) licensed.
+This project is [{{licensed}}](https://github.com/{{github}}/{{projectLinkname}}?tab=MIT-1-ov-file) licensed.
