@@ -10,7 +10,7 @@ const parentFolderName = path.basename(parentFolderPath);
 const formattedName = parentFolderName
   .split("-")
   .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-  .join(" ");
+  .join("%20");
 
 let template;
 try {
