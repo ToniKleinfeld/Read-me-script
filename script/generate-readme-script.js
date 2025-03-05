@@ -1,5 +1,5 @@
 const fs = require("fs");
-const { console } = require("inspector");
+const { consoles } = require("inspector");
 const path = require("path");
 const readline = require("readline");
 
@@ -16,7 +16,7 @@ let template;
 try {
   template = fs.readFileSync(templatePath, "utf8");
 } catch (err) {
-  console.error("Template-Datei nicht gefunden:", err);
+  consoles.error("Template-Datei nicht gefunden:", err);
   process.exit(1);
 }
 
