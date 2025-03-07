@@ -167,19 +167,19 @@ function checkEmptyTemplate(Value, part, filledContent) {
 function returnFrameworkString(Value, part) {
   if (part == "build") {
     if (Value.toLowerCase() === "angular") {
-      return "Run ```sh\nng build\n``` to build the project. The build artifacts will be stored in the dist/ directory.";
+      return "Run\n ```sh\nng build\n``` \n to build the project. The build artifacts will be stored in the dist/ directory.";
     } else if (Value.toLowerCase() === "nuxt") {
-      return "Build the application for production with ```sh\nnpm run build\n```";
+      return "Build the application for production with\n  ```sh\nnpm run build\n```";
     } else if (Value.toLowerCase() === "vue") {
-      return "Type-Check, Compile and Minify for Production ```sh\nnpm run build\n ```";
+      return "Type-Check, Compile and Minify for Production\n  ```sh\nnpm run build\n ```";
     }
   } else if (part == "usage") {
     if (Value.toLowerCase() === "angular") {
-      return "Run ```sh\nng serve\n``` for a dev server. Navigate to http://localhost:4200/. The application will automatically reload if you change any of the source files.";
+      return "Run\n  ```sh\nng serve\n```\n  for a dev server. Navigate to http://localhost:4200/. The application will automatically reload if you change any of the source files.";
     } else if (Value.toLowerCase() === "nuxt") {
-      return "Start the development server on http://localhost:3000 with ```sh\nnpm run dev\n```";
+      return "Start the development server on http://localhost:3000 with\n  ```sh\nnpm run dev\n```";
     } else if (Value.toLowerCase() === "vue") {
-      return "Compile and Hot-Reload for Development ```sh\nnpm run dev\n```";
+      return "Compile and Hot-Reload for Development\n  ```sh\nnpm run dev\n```";
     }
   } else if (part == "banner") {
     if (Value.toLowerCase() === "angular") {
