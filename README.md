@@ -8,7 +8,7 @@
 </p>
 
 > Create and modifie a personalised readme.md  
-With default values and banner for some Frameworks.
+With default values and banner for some Frameworks.</br>
 Current : React, Vue , Nuxt3 , JS , Angular , Django
 
 ## Installation
@@ -33,7 +33,7 @@ Create your own .env , where you can set up your own pre values for Author , Git
 ```
 
 > [!NOTE]
-> After creating the readme.md you can delete the script folder if no need anymore.
+> After creating the readme.md you can delete the script folder if there is no need anymore.
 
 ## More Infos
 
