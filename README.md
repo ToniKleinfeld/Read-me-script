@@ -2,7 +2,7 @@
 
 <p>
   <img alt="Version" src="https://img.shields.io/badge/Coded_in-JavaScript-yellow?logo=javascript" />
-  <a href="https://github.com/ToniKleinfeld;/Read-me-script?tab=MIT-1-ov-file">
+  <a href="https://github.com/ToniKleinfeld/Read-me-script?tab=MIT-1-ov-file">
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
   </a>
 </p>
