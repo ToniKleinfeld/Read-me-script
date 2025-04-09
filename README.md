@@ -13,7 +13,7 @@ Current : React, Vue , Nuxt3 , JS , Angular , Django
 
 ## Installation
 
-You need Node installed!
+You need Node installed! </br>
 Insert only the script folder to you root project and add to git.ignore.
 
 
