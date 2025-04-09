@@ -31,6 +31,7 @@ Create your own .env , where you can set up your own pre values for Author , Git
 ```sh
   node script/generate-readme-script.js
 ```
+"Follow" the Intructions in the console.
 
 > [!NOTE]
 > After creating the readme.md you can delete the script folder if there is no need anymore.
