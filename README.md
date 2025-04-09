@@ -20,7 +20,7 @@ Create your own .env , where you can set up your own pre values for Author , Git
 
 
 ```sh
-  cp .env.example .env
+  cp script/.env.example script/.env
 ```
 
 > [!IMPORTANT]
@@ -39,11 +39,11 @@ Create your own .env , where you can set up your own pre values for Author , Git
 
 👤 **Toni Kleinfeld;**
 
-- 🏠 : https://toni-kleinfeld.de/;
+- 🏠 : https://toni-kleinfeld.de/
 
-- Github: [@ToniKleinfeld;](https://github.com/ToniKleinfeld;)
+- Github: [@ToniKleinfeld](https://github.com/ToniKleinfeld)
 
-- LinkedIn: https://www.linkedin.com/in/tonikleinfeld/;
+- LinkedIn: https://www.linkedin.com/in/tonikleinfeld/
 
 ## Show your support
 
@@ -54,7 +54,7 @@ Give a ⭐️ if this project helped you!
 
 ## 📝 License
 
-Copyright © 2025 [Toni Kleinfeld;](https://github.com/ToniKleinfeld;).
+Copyright © 2025 [Toni Kleinfeld;](https://github.com/ToniKleinfeld).
 
 <br />
 
