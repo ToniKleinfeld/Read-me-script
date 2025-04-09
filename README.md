@@ -13,7 +13,8 @@ Current : React, Vue , Nuxt3 , JS , Angular , Django
 
 ## Installation
 
-You need Node installed , insert the script folder to you root project and add to git.ignore.
+You need Node installed!
+Insert only the script folder to you root project and add to git.ignore.
 
 
 Create your own .env , where you can set up your own pre values for Author , Github, Linkin and Website.
