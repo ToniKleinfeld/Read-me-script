@@ -133,7 +133,7 @@ rl.question(
                             );
                             if (installation == "django") {
                               installation =
-                                "First install all needed packages.\n ```sh\npip install -r requirements.txt \n```";
+                                "First install all needed packages.\n ```sh\npython -m venv env\n\nenv/Scripts/activate\n\npip install -r requirements.txt \n```\n\n> [!IMPORTANT]\n> create your .env file and fill your data\n\n```sh\ncp .env.example .env\n```\n\n>[!NOTE]\n> Or create your env file with a random generatet key and default settings\n\n```sh\npython setup_env.py\n```\n\n";
                             } else {
                               installation = "```sh\nnpm install\n ```";
                             }
